@@ -1,0 +1,52 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.gameBoard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.boardGame{
+    display: grid;
+    width: 500px;
+    height: 500px;
+   
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    
+
+}
+
+#restart{
+    margin-top: 80px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+
+}
+
+.square{
+    border: 2px solid blue;
+    border-radius: 30px;
+    transition: background-color 0.9s ease;
+    
+}
+
+.square:hover{
+    background-color: #e0e0e0;
+}
