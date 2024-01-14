@@ -2,6 +2,7 @@ html,body{
     height: 100%;
     width: 100%;
     
+    
 }
 
 .title{
@@ -41,12 +42,23 @@ html,body{
 }
 
 .square{
-    border: 2px solid blue;
+    display: flex;
+    border: 2px solid #F8F4EC;
     border-radius: 30px;
-    transition: background-color 0.9s ease;
+    transition: background-color 0.6s ease;
+    background-color: #F8F4EC;
+    justify-content: center;
+    align-items: center;
+
     
 }
 
 .square:hover{
     background-color: #e0e0e0;
+}
+
+.oMark, .xMark{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
 }
