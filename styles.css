@@ -10,25 +10,52 @@ html,body{
     justify-content: center;
 }
 
-.gameBoard{
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    margin-top: 80px;
+}
+
+.playerInput{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    margin-top: 100px;
+    
+    
+
+}
+
+
+#playerName{
+    margin-bottom: 20px;
+}
+
+#submitButton{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
 }
 
 .boardGame{
     display: grid;
     width: 500px;
     height: 500px;
-   
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     
 
+}
+
+.gameBoard-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 #restart{
@@ -53,6 +80,10 @@ html,body{
     
 }
 
+.resultMessage{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
 .square:hover{
     background-color: #e0e0e0;
 }

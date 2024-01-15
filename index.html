@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,36 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <h1 class="title">TicTacToe</h1>
-    <div class="gameBoard">
-        <div class="boardGame">
-        <div class="square" id="squareOne"></div>
-        <div class="square" id="squareTwo"></div>
-        <div class="square" id="squareThree"></div>
-        <div class="square" id="squareFour"></div>
-        <div class="square" id="squareFive"></div>
-        <div class="square" id="squareSix"></div>
-        <div class="square" id="squareSeven"></div>
-        <div class="square" id="squareEight"></div>
-        <div class="square" id="squareNine"></div>
+    <h1 class="title">Tic-Tac-Toe</h1>
+    <div class="main-container">
+        <div class="playerInput">
+            <label for="playerName">Enter your name :</label>
+            <input type="text" id="playerName" name="playerName">
+            <input type="submit" value="Confirm" id="submitButton">
         </div>
-         
+        <div class="resultMessage"></div>
+        <div class="gameBoard-container">
+            <div class="playerScore">Player 1 : 0</div>
+            <div class="boardGame">
+                <div class="square" id="squareOne"></div>
+                <div class="square" id="squareTwo"></div>
+                <div class="square" id="squareThree"></div>
+                <div class="square" id="squareFour"></div>
+                <div class="square" id="squareFive"></div>
+                <div class="square" id="squareSix"></div>
+                <div class="square" id="squareSeven"></div>
+                <div class="square" id="squareEight"></div>
+                <div class="square" id="squareNine"></div>
+            </div>
+            <div class="aiScore">Computa : 0</div>
+        </div>
+
         <button id="restart">Play Again</button>
 
     </div>
 
 </body>
+
 </html>
